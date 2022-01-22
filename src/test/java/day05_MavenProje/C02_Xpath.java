@@ -39,7 +39,7 @@ public class C02_Xpath {
         driver.findElement(By.xpath("//input[@value='Pay']")).click();
         //10. “The payment was successfully submitted.” mesajinin ciktigini control edin
        WebElement isSubmitted = driver.findElement(By.xpath("//span[text()='The payment was successfully submitted.']"));
-        System.out.println(isSubmitted.isDisplayed()?"Submit test : Passed":"Submitted test : Failed");
+        System.out.println(isSubmitted.isDisplayed()?"Submit test : Passed":"Submit test : Failed");
 
         System.out.println("GOREV TAMAMLANDI");
 
