@@ -42,18 +42,19 @@ public class C03_BestBuyAssetions {
         Assert.assertFalse(driver.getTitle().contains("Rest"));
     }
     @Test
+    public void test04() {
+        //	○ FrancaisLinkTest => Fransizca Linkin görüntülendiğini test edin
+        WebElement french = driver.findElement(By.xpath("//button[text()='Français']"));
+        Assert.assertTrue(french.isEnabled());
+    }
+    @Test
     public void test03() {
         //		○ logoTest => BestBuy logosunun görüntülendigini test edin
         WebElement logo = driver.findElement(By.xpath("(//img[@class='logo'])[1]"));
         Assert.assertTrue(logo.isEnabled());
     }
 
-    @Test
-    public void test04() {
-        	//	○ FrancaisLinkTest => Fransizca Linkin görüntülendiğini test edin
-        WebElement french = driver.findElement(By.xpath("//button[text()='Français']"));
-        Assert.assertTrue(french.isEnabled());
-    }
+
     @AfterClass
     public static void teardown() {
        driver.close();
