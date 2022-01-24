@@ -1,8 +1,6 @@
 package day07_Assertions;
 
-import io.github.bonigarcia.wdm.WdmAgent;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.checkerframework.checker.units.qual.C;
 import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
