@@ -28,26 +28,26 @@ public class C03_BestBuyAssetions {
     }
 
     @Test
-    public void test01() {
+    public void urlTest() {
      //   ○ Sayfa URL’inin https://www.bestbuy.com/ ‘a esit oldugunu test edin
         driver.get("https://www.bestbuy.com/");
         Assert.assertEquals(driver.getCurrentUrl(),"https://www.bestbuy.com/");
     }
 
     @Test
-    public void test02() {
+    public void titleTest() {
       //  ○ titleTest => Sayfa başlığının “Rest” içermediğini(contains) test edin
         Assert.assertFalse(driver.getTitle().contains("Rest"));
     }
     @Test
-    public void test03() {
+    public void logoTest() {
         //		○ logoTest => BestBuy logosunun görüntülendigini test edin
         WebElement logo = driver.findElement(By.xpath("(//img[@class='logo'])[1]"));
         Assert.assertTrue(logo.isEnabled());
     }
 
     @Test
-    public void test04() {
+    public void francaisTest() {
         	//	○ FrancaisLinkTest => Fransizca Linkin görüntülendiğini test edin
         WebElement french = driver.findElement(By.xpath("//button[text()='Français']"));
         Assert.assertTrue(french.isEnabled());
